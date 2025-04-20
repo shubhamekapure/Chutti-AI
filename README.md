@@ -1,6 +1,7 @@
 # Chutti AI - Smart Vacation Planner
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![GitHub issues](https://img.shields.io/github/issues/shubhamekapure/Chutti-AI)](https://github.com/shubhamekapure/Chutti-AI/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/shubhamekapure/Chutti-AI)](https://github.com/shubhamekapure/Chutti-AI/pulls)
 
-![Chutti AI Banner](https://i.imgur.com/vD2NRnU.png)
+![Chutti AI Banner](assets/banner.jpeg)
 
 Chutti AI is an intelligent vacation planning tool that helps you discover perfect breaks by combining:
 - Public holidays (from Calendarific API)
@@ -23,7 +24,7 @@ The tool identifies potential vacation breaks with at least 5 days total duratio
 
 ## 📸 Screenshots
 
-![Chutti AI Screenshot](https://i.imgur.com/XZLzYKE.png)
+![Chutti AI Screenshot](assets/screenshot.png)
 
 ## 🛠️ Setup & Installation
 
@@ -35,8 +36,8 @@ The tool identifies potential vacation breaks with at least 5 days total duratio
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/chutti-ai.git
-   cd chutti-ai
+   git clone https://github.com/shubhamekapure/Chutti-AI.git
+   cd Chutti-AI
    ```
 
 2. Install dependencies
@@ -44,8 +45,10 @@ The tool identifies potential vacation breaks with at least 5 days total duratio
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file in the project root with your Calendarific API key
-   ```
+3. Copy the `.env.template` to `.env` and fill in your Calendarific API key
+   ```bash
+   cp .env.template .env
+   # then edit .env to include:
    CALENDARIFIC_API_KEY=your_api_key_here
    ```
 
@@ -102,4 +105,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Shubham
