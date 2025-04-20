@@ -40,30 +40,36 @@ The tool identifies potential vacation breaks with at least 5 days total duratio
    cd Chutti-AI
    ```
 
-2. Install dependencies
+2. Create a Python virtual environment and activate it
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. Install dependencies
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Copy the `.env.template` to `.env` and fill in your Calendarific API key
+4. Copy the `.env.template` to `.env` and fill in your Calendarific API key
    ```bash
    cp .env.template .env
    # then edit .env to include:
    CALENDARIFIC_API_KEY=your_api_key_here
    ```
 
-4. Start the backend server
+5. Start the backend server
    ```bash
-   python backend/app.py
+   python3 backend/app.py
    ```
 
-5. In a new terminal, start the frontend server
+6. In a new terminal, start the frontend server
    ```bash
    cd frontend
    python -m http.server 8000
    ```
 
-6. Open your browser and navigate to `http://localhost:8000`
+7. Open your browser and navigate to `http://localhost:8000`
 
 ## 🔍 How to Use
 
