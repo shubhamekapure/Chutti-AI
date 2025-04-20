@@ -554,7 +554,7 @@
             </div>`;
         
         try {
-            const resp = await fetch(`${API_URL}/api/vacations`, {
+            const resp = await fetch('https://chutti-ai.onrender.com/api/vacations', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -688,7 +688,7 @@
                     <span>Fetching holidays...</span>
                 </div>`;
             
-            const resp = await fetch(`${API_URL}/api/holidays`, {
+            const resp = await fetch('https://chutti-ai.onrender.com/api/holidays', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
