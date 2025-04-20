@@ -441,8 +441,9 @@
 </head>
 <body>
     <script>
-        // Base API URL, override via environment (e.g. Render's Static Site env var)
-        const API_URL = window.API_URL || 'http://localhost:5050';
+        // Base API URL - hardcoded to Render deployment
+        const API_URL = 'https://chutti-ai.onrender.com';
+        console.log('Using API URL:', API_URL);
     </script>
     <div class="hero">
         <div class="hero-content">
