@@ -122,7 +122,7 @@ def find_vacation_breaks(start_date, end_date, weekends, holidays):
                 continue
             chunk = all_days[i:i+window]
             num_holidays = sum(1 for d in chunk if d["is_holiday"])
-            num_weekends = sum(1 for d in chunk if d["is_weekend"])
+            num_weekends = sum(1 for d in chunk if d["is_weekend"] and not d["is_holiday"])
             leave_needed = window - (num_holidays + num_weekends)
             
             # Debug print
@@ -136,7 +136,7 @@ def find_vacation_breaks(start_date, end_date, weekends, holidays):
             if leave_needed <= 1 and num_weekends <= 2 and num_holidays >= 3 and (window >= 5):
                 # Calculate days by type for the description
                 holiday_days = [d for d in chunk if d["is_holiday"]]
-                weekend_days = [d for d in chunk if d["is_weekend"]]
+                weekend_days = [d for d in chunk if d["is_weekend"] and not d["is_holiday"]]
                 leave_days = [d for d in chunk if not d["is_holiday"] and not d["is_weekend"]]
                 
                 # Create description with days categorized
